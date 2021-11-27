@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,800&family=Sarabun:wght@400;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .corner-square {
+    @apply 
+      bg-secondary-content
+      w-6 h-6;
+  }
+
+  .corner-line {
+    @apply 
+      bg-secondary-content
+      w-16 h-[1px]
+      min-w-[16px];
+  }
+
+  .nav-flex-padding {
+    @apply mr-4;
+
+    &:last-child {
+      @apply mr-0;
+    }
+  }
+
+  .nav-item {
+    @apply
+      before:content-['•']
+      before:text-primary-content
+      before:mx-2
+      first:before:content-none
+  }
+}
