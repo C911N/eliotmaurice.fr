@@ -6,6 +6,8 @@
 @tailwind utilities;
 
 @layer base {
+
+  /* Utils */
   .corner-square {
     @apply 
       bg-secondary-content
@@ -19,19 +21,54 @@
       min-w-[16px];
   }
 
-  .nav-flex-padding {
-    @apply mr-4;
-
-    &:last-child {
-      @apply mr-0;
-    }
-  }
-
+  /* Navbar */
   .nav-item {
     @apply
       before:content-['•']
       before:text-primary-content
       before:mx-2
       first:before:content-none
+  }
+
+  /* Sections */
+  .section-image-layout {
+    @apply
+      relative
+      w-screen h-[calc(100vh+4.5rem)]
+      bg-secondary-content;
+  }
+
+  .section-triangle-layout {
+    @apply
+      relative
+      w-screen h-screen
+      z-10
+      bg-secondary-layout;
+  }
+
+  .section-triangle-layout::before {
+    @apply
+      content-['']
+      absolute
+      bottom-full
+      w-0 h-0
+      border-solid border-b-[4.5rem] border-l-[100vw]
+      border-secondary-layout;
+
+    border-left-color: transparent;
+    border-top-color: transparent;
+  }
+
+  .section-triangle-layout::after {
+    @apply
+      content-['']
+      absolute
+      top-full
+      w-0 h-0
+      border-solid border-b-[4.5rem] border-l-[100vw]
+      border-secondary-layout;
+
+    border-right-color: transparent;
+    border-bottom-color: transparent;
   }
 }

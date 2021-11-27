@@ -1,15 +1,21 @@
-import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Home() {
   return (<>
-    <section className="w-screen h-screen bg-dev-layout">
+    <section className="section-image-layout">
+    <Image className="brightness-[0.4]" src={"/eiffel_tower.png"} layout="fill" objectFit="cover"/>
+    </section>
+    <section className="section-triangle-layout">
 
     </section>
-    <section className="w-screen h-screen bg-seconday-layout">
+    <section className="section-image-layout">
+      <Image className="brightness-[0.3]" src={"/cactus_drawings.png"} layout="fill" objectFit="cover"/>
+    </section>
+    <section className="section-triangle-layout">
 
     </section>
-    <section className="w-screen h-screen bg-dev-layout">
-
+    <section className="section-image-layout">
+      <Image className="brightness-[0.3]" src={"/cactus_drawings.png"} layout="fill" objectFit="cover"/>
     </section>
   </>)
 }
