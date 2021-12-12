@@ -1,10 +1,11 @@
 import Image from 'next/image'
 
+// Internal components
+import TitleSection from '../components/sections/TitleSection'
+
 export default function Home() {
   return (<>
-    <section className="section-image-layout">
-    <Image className="brightness-[0.4]" src={"/eiffel_tower.png"} layout="fill" objectFit="cover"/>
-    </section>
+    <TitleSection />
     <section className="section-triangle-layout">
 
     </section>

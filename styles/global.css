@@ -1,11 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,800&family=Sarabun:wght@400;800&display=swap');
+@import url('https://fr.allfont.net/allfont.css?fonts=sansita-one');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+
+  /* General */
+  body {
+    @apply 
+      font-secondary
+      text-secondary-content
+  }
+
+  h1 {
+    @apply
+      font-primary
+      text-4xl
+  }
+
+  button {
+    @apply
+      relative
+      border-none
+      font-primary
+      text-2xl
+  }
+
+  button::after {
+    @apply
+      content-['']
+      absolute
+      right-0 bottom-[-3px]
+      w-1/2 h-[1px]
+      bg-secondary-content;
+    
+    transition:
+      width ease-out 0.3s,
+      height ease-out 0.3s;
+  }
+
+  button:hover::after {
+    @apply w-full h-1;
+  }
 
   /* Utils */
   .corner-square {
@@ -34,7 +72,7 @@
   .section-image-layout {
     @apply
       relative
-      w-screen h-[calc(100vh+4.5rem)]
+      w-screen h-[calc(100vh+9rem)]
       bg-secondary-content;
   }
 

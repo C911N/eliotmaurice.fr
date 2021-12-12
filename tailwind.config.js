@@ -9,6 +9,7 @@ module.exports = {
     colors: {
       'primary-layout': '#181818',
       'secondary-layout': '#1C0000',
+      'tertiary-layout': '#313A4A',
       // TODO: To remove, tmp color to replace images
       'dev-layout': '#232323',
       'primary-content': '#FF7B7B',
@@ -16,7 +17,7 @@ module.exports = {
       'tertiary-content': '#D9D9D9'
     },
     fontFamily: {
-      'primary': 'Sansita One',
+      'primary': ['Sansita One', 'sans-serif'],
       'secondary': ['Sarabun', 'sans-serif']
     }
   },
