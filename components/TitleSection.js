@@ -50,19 +50,19 @@ const MiddleBlock = () => {
               <div className="relative w-8 h-8">
                 <img src={"/linked_in.png"} layout="fill" objectFit="contain"/>
               </div>
-              <a className="ml-2" href="https://www.linkedin.com/in/eliot-maurice-2b43b418b/" target="_blank">Linked in •</a>
+              <a className="ml-2 font-primary" href="https://www.linkedin.com/in/eliot-maurice-2b43b418b/" target="_blank">Linked in •</a>
             </button>
             <button className="ml-6 flex flex-row justify-center align-middle text-malt after:bg-malt">
               <div className="relative w-8 h-8">
                 <img src={"/malt.png"} layout="fill" objectFit="contain"/>
               </div>
-              <a className="ml-2" href="https://www.malt.fr/profile/eliotmaurice?overview=true" target="_blank">Malt.fr •</a>
+              <a className="ml-2 font-primary" href="https://www.malt.fr/profile/eliotmaurice?overview=true" target="_blank">Malt.fr •</a>
             </button>
             <button className="ml-6 flex flex-row justify-center align-middle text-comet after:bg-comet">
               <div className="relative w-8 h-8">
                 <img src={"/comet.png"} layout="fill" objectFit="contain"/>
               </div>
-              <a className="ml-2" href="https://app.comet.co/freelancer/profile/y5eVKyOaEP?readOnly=true" target="_blank">Comet.co •</a>
+              <a className="ml-2 font-primary" href="https://app.comet.co/freelancer/profile/y5eVKyOaEP?readOnly=true" target="_blank">Comet.co •</a>
             </button>
           </div>
         </div>
