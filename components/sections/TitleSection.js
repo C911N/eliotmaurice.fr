@@ -1,10 +1,9 @@
-import Image from 'next/image'
 
 // Main section (Title)
 const TitleSection = () => {
   return (
-    <section className="section-image-layout h-screen">
-      <Image className="absolute brightness-[0.25]" src={"/eiffel_tower.png"} layout="fill" objectFit="cover"/>
+    <section className="section-image-layout h-screen w-screen">
+      <img className="absolute brightness-[0.25] object-cover w-screen h-screen" src={"/eiffel_tower.png"} />
       <TitlesBlock />
       <div className="mt-16 absolute w-full h-[calc(100%-5rem)] flex flex-col align-middle">
         {/* Full screen container */}
@@ -49,19 +48,19 @@ const MiddleBlock = () => {
           <div className="mt-8 flex flex-row justify-start align-middle">
             <button className="flex flex-row justify-center align-middle text-linked-in after:bg-linked-in">
               <div className="relative w-8 h-8">
-                <Image src={"/linked_in.png"} layout="fill" objectFit="contain"/>
+                <img src={"/linked_in.png"} layout="fill" objectFit="contain"/>
               </div>
               <a className="ml-2" href="https://www.linkedin.com/in/eliot-maurice-2b43b418b/" target="_blank">Linked in •</a>
             </button>
             <button className="ml-6 flex flex-row justify-center align-middle text-malt after:bg-malt">
               <div className="relative w-8 h-8">
-                <Image src={"/malt.png"} layout="fill" objectFit="contain"/>
+                <img src={"/malt.png"} layout="fill" objectFit="contain"/>
               </div>
               <a className="ml-2" href="https://www.malt.fr/profile/eliotmaurice?overview=true" target="_blank">Malt.fr •</a>
             </button>
             <button className="ml-6 flex flex-row justify-center align-middle text-comet after:bg-comet">
               <div className="relative w-8 h-8">
-                <Image src={"/comet.png"} layout="fill" objectFit="contain"/>
+                <img src={"/comet.png"} layout="fill" objectFit="contain"/>
               </div>
               <a className="ml-2" href="https://app.comet.co/freelancer/profile/y5eVKyOaEP?readOnly=true" target="_blank">Comet.co •</a>
             </button>
@@ -69,7 +68,7 @@ const MiddleBlock = () => {
         </div>
         <div className="relative -mt-8 ml-3 lg:w-80 h-80 md:w-0">
           {/* Laptop image container */}
-          <Image src={"/laptop.png"} layout="fill" objectFit="contain"/>
+          <img src={"/laptop.png"} layout="fill" objectFit="contain"/>
         </div>
       </div>
     </div>
