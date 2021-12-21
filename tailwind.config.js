@@ -14,7 +14,12 @@ module.exports = {
       'dev-layout': '#232323',
       'primary-content': '#FF7B7B',
       'secondary-content': '#FFFFFF',
-      'tertiary-content': '#D9D9D9'
+      'tertiary-content': '#D9D9D9',
+      'linked-in': '#3272AE',
+      'malt': '#EB576B',
+      'comet': '#FFFFFF',
+      'black': '#000000',
+      'green': '#90FFB9'
     },
     fontFamily: {
       'primary': ['Sansita One', 'sans-serif'],
