@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
+// Custom document importing custom fonts
 class CustonDocument extends Document {
   render() {
     return (
@@ -17,6 +18,7 @@ class CustonDocument extends Document {
   }
 }
 
+// Simple link to CSS Fonts
 const Font = ({ url }) => {
   return (
     <link
