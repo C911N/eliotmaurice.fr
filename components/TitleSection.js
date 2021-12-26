@@ -70,7 +70,7 @@ const MiddleBlock = () => {
             </button>
           </div>
         </div>
-        <div className="relative -mt-8 ml-3 lg:w-80 h-80 md:w-0">
+        <div className="relative -mt-8 ml-3 lg:w-80 h-80 md:w-0 flex-shrink-0">
           {/* Laptop image container */}
           <Image src={"/laptop.png"} layout="fill" objectFit="contain"/>
         </div>
