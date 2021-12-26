@@ -1,4 +1,3 @@
-
 // Main section (Title)
 const TitleSection = () => {
   return (

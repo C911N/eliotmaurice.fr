@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 // Internal components
 import TitleSection from '../components/TitleSection'
 

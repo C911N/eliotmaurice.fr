@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;800&display=swap');
-@import url('https://fr.allfont.net/allfont.css?fonts=sansita-one');
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+@import url('http://fonts.cdnfonts.com/css/sansita-one');
 
 @tailwind base;
 @tailwind components;
