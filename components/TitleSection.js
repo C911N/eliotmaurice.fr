@@ -36,37 +36,37 @@ const TitlesBlock = () => {
 const MiddleBlock = () => {
   return (
     <div className="flex-1 mx-[6rem]">
-      <div className="flex flex-row justify-center align-middle whitespace-nowrap">
+      <div className="flex flex-row justify-center align-middle">
         {/* Centered content container */}
         <div className="w-[33rem]">
           {/* Paragraph and buttons container */}
-          <p className="text-secondary-content text-4xl">
-            Ce portfolio est en pleine refonte, <br/>
+          <p className="text-secondary-content text-2xl md:text-4xl whitespace-nowrap">
+            Ce portfolio est en pleine refonte,<br/>
             <a className="font-bold">mais pas si vite!</a><br/>
-            Vous pouvez retrouver mon profil<br/>
-            sur <a className="font-bold">toutes ces platformes.</a>
+            Vous pouvez retrouver mon profil sur<br/>
+            <a className="font-bold">toutes ces platformes.</a>
           </p>
-          <div className="mt-8 flex flex-row justify-start align-middle">
-            <button className="flex flex-row justify-center align-middle text-linked-in after:bg-linked-in">
+          <div className="mt-8 flex flex-col md:flex-row justify-start align-middle whitespace-nowrap">
+            <button className="mt-4 md:mt-0 flex flex-row justify-center align-middle text-linked-in after:bg-linked-in">
               {/* Linked-in button */}
               <div className="relative w-8 h-8">
                 <Image src={"/linked_in.png"} layout="fill" objectFit="contain"/>
               </div>
-              <a className="ml-2 font-primary" href="https://www.linkedin.com/in/eliot-maurice-2b43b418b/" target="_blank">Linked in •</a>
+              <a className="ml-2 font-primary text-2xl" href="https://www.linkedin.com/in/eliot-maurice-2b43b418b/" target="_blank">Linked in •</a>
             </button>
-            <button className="ml-6 flex flex-row justify-center align-middle text-malt after:bg-malt">
+            <button className="mt-6 md:mt-0 md:ml-6 flex flex-row justify-center align-middle text-malt after:bg-malt">
               {/* Malt button */}
               <div className="relative w-8 h-8">
                 <Image src={"/malt.png"} layout="fill" objectFit="contain"/>
               </div>
-              <a className="ml-2 font-primary" href="https://www.malt.fr/profile/eliotmaurice?overview=true" target="_blank">Malt.fr •</a>
+              <a className="ml-2 font-primary text-2xl" href="https://www.malt.fr/profile/eliotmaurice?overview=true" target="_blank">Malt.fr •</a>
             </button>
-            <button className="ml-6 flex flex-row justify-center align-middle text-comet after:bg-comet">
+            <button className="mt-6 md:mt-0 md:ml-6 flex flex-row justify-center align-middle text-comet after:bg-comet">
               {/* Comet button */}
               <div className="relative w-8 h-8">
                 <Image src={"/comet.png"} layout="fill" objectFit="contain"/>
               </div>
-              <a className="ml-2 font-primary" href="https://app.comet.co/freelancer/profile/y5eVKyOaEP?readOnly=true" target="_blank">Comet.co •</a>
+              <a className="ml-2 font-primary text-2xl" href="https://app.comet.co/freelancer/profile/y5eVKyOaEP?readOnly=true" target="_blank">Comet.co •</a>
             </button>
           </div>
         </div>

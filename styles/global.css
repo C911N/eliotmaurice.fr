@@ -35,11 +35,11 @@
 
   button::after {
     @apply
-      content-['']
-      absolute
-      right-0 bottom-[-3px]
-      w-1/2 h-[1px]
-      bg-secondary-content;
+      md:content-['']
+      md:absolute
+      md:right-0 bottom-[-3px]
+      md:w-1/2 h-[1px]
+    md:bg-secondary-content;
     
     transition:
       width ease-out 0.3s,
