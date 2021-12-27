@@ -47,7 +47,7 @@
   }
 
   button:hover::after {
-    @apply w-full h-1;
+    @apply md:w-full md:h-1;
   }
 
   /* Utils */
